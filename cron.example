@@ -1,0 +1,4 @@
+# Example: run every day at 08:00 in the host's local timezone.
+# Replace /ABS/PATH/TO/bellhaven_takehome with the real location on your computer.
+# Local SQLite persists between runs, so approved/rejected proposals are not requeued.
+0 8 * * * cd /ABS/PATH/TO/bellhaven_takehome && /ABS/PATH/TO/bellhaven_takehome/.venv/bin/python pipeline.py >> /ABS/PATH/TO/bellhaven_takehome/pipeline.log 2>&1
